@@ -1,0 +1,82 @@
+/* style.css */
+
+h1 {
+margin-top: 
+  50;
+font: 
+  size 2em;
+color: 
+  #1d1a1a;
+font-family: 
+  'Courier New', monospace;
+text-align: 
+  center;
+}
+
+html, body {
+height: 
+  100%;
+}
+
+body {
+
+background-color: 
+  rgb(255, 255, 255);
+}
+script {
+
+  
+
+  /* This centers our sketch horizontally. */
+}
+
+h2 {
+display: 
+  block;
+margin-bottom: 
+  200;
+margin-left: 
+  600;
+margin-right: 
+  80;
+margin-top: 
+  50;
+  color: 
+  #000000;
+font:   
+1.13vw/2vw Courier New, serif;
+text-align: 
+  justify;
+  line-height: 2;
+  
+
+}
+
+
+canvas {
+  position: 
+  absolute;
+top: 
+  120px; 
+left: 
+  60px;
+  transform: scale(0.9);
+}  
+
+button {
+  display: flex;
+
+  position: absolute;
+ 
+  left: 60%;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  
+  
+}
+
+button:hover {
+  background-color: #555555;
+  color: white;
+}
