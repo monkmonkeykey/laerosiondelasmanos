@@ -6,6 +6,8 @@ const moveScale = 600;
 let segundos;
 let img, imgT;
 let aleatorio;
+var ancho = width/3.5;
+var alto = height/3.5;
 function preload() {
   img = loadImage("data/2.png");
   imgT = loadImage("data/4.png");
@@ -13,7 +15,7 @@ function preload() {
 }
 function setup() {
 
-  createCanvas(500, 577);
+  createCanvas(alto, ancho);
   noStroke();
   background(255);
 
@@ -22,9 +24,9 @@ function setup() {
   for (let i = 0; i < 1000; i++) { //numero de líneas
     pos.push( {
     x:
-      randomW = random(0, 500), 
+      randomW = random(0, alto), 
       y:
-      randomH = random(0, 667), 
+      randomH = random(0, ancho), 
       c:
       colores[floor(random(colores.length))]
     }
