@@ -9,8 +9,7 @@ let img;
 let respuesta1, respuesta2, respuesta3, respuesta4, respuesta5, respuesta6, respuesta7;
 let presionado;
 var pdf;
-var ancho = width/3.5;
-var alto = height/3.5;
+
 function preload() {
   img = loadImage("data/2.png");
   imgT = loadImage("data/4.png");
@@ -18,7 +17,7 @@ function preload() {
 }
 function setup() {
   img.loadPixels();
-  createCanvas(ancho, alto, P2D);
+  createCanvas(500,577, P2D);
 
   noStroke();
   background(255);
@@ -29,9 +28,9 @@ function setup() {
   for (let i = 0; i < 1000; i++) { //numero de líneas
     pos.push( {
     x:
-      randomW = random(0, alto),
+      randomW = random(0, 500),
       y:
-      randomH = random(0, ancho),
+      randomH = random(0, 667),
       c:
       colores[floor(random(colores.length))]
     }
