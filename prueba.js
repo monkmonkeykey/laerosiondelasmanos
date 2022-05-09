@@ -24,9 +24,9 @@ function setup() {
   for (let i = 0; i < 1000; i++) { //numero de líneas
     pos.push( {
     x:
-      randomW = random(0, alto), 
+      randomW = random(0, 500), 
       y:
-      randomH = random(0, ancho), 
+      randomH = random(0, 577), 
       c:
       colores[floor(random(colores.length))]
     }
