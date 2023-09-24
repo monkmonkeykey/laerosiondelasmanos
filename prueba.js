@@ -6,8 +6,6 @@ const moveScale = 600;
 let segundos;
 let img, imgT;
 let aleatorio;
-var ancho = width/3.5;
-var alto = height/3.5;
 function preload() {
   img = loadImage("data/2.png");
   imgT = loadImage("data/4.png");
@@ -15,7 +13,7 @@ function preload() {
 }
 function setup() {
 
-  createCanvas(alto, ancho);
+  createCanvas(500, 577);
   noStroke();
   background(255);
 
@@ -26,7 +24,7 @@ function setup() {
     x:
       randomW = random(0, 500), 
       y:
-      randomH = random(0, 577), 
+      randomH = random(0, 667), 
       c:
       colores[floor(random(colores.length))]
     }
@@ -56,8 +54,10 @@ function draw() {
 
   if (segundos == 35) {
     image(imgT, 0, 0);
+    //window.location.href = "www.lynnettecampos.com";
     noLoop();
-  } else if (segundos >= 6) {
+  } 
+  else if (segundos >= 6) {
     loop();
   } else {
   }
